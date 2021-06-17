@@ -1,6 +1,6 @@
 import React from "react";
 
-import CollectionItem from '../collection-item/collection-item.component'
+import CollectionItem from "../collection-item/collection-item.component";
 
 import "./collection-preview.styles.scss";
 
@@ -9,7 +9,8 @@ const CollectionPreview = ({ title, items }) => (
     <h1 className="title">{title.toUpperCase()}</h1>
     <div className="preview">
       {items.map(
-        ({ id, ...otherItemProps}, idx) => idx < 4 && <CollectionItem key={id} { ...otherItemProps }/>
+        (item, idx) =>
+          idx < 4 && <CollectionItem key={item.id} item={item} />
       )}
     </div>
   </div>
