@@ -32,6 +32,9 @@
       text-align: center;
       border: none;
       outline: none;
+      @media screen and (max-width: 800px) {
+        margin-top: -30px;
+      }
     }
 
     .value {
@@ -49,5 +52,8 @@
     text-align: center;
     border: none;
     outline: none;
+    @media screen and (max-width: 800px) {
+      margin-top: -5px;
+    }
   }
 }
